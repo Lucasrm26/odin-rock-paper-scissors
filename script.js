@@ -19,3 +19,9 @@ function getHumanChoice() {
     const choice = prompt("Choose:");
     return choice;
 }
+
+const computerChoice = getComputerChoice();
+const humanChoice = getHumanChoice();
+
+let computerScore = 0;
+let humanScore = 0;
