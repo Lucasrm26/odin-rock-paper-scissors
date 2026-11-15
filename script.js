@@ -14,3 +14,8 @@ function getComputerChoice() {
     }
     return choice;
 }
+
+function getHumanChoice() {
+    const choice = prompt("Choose:");
+    return choice;
+}
