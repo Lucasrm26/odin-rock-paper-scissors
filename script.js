@@ -21,10 +21,10 @@ function getHumanChoice() {
 }
 
 function playGame() {
-    function playRound(computerSelection, humanSelection) {
-    humanSelection = humanSelection.toLowerCase();
-        if (humanSelection === "rock"){
-            switch(computerSelection){
+    function playRound(computerChoice, humanChoice) {
+    humanChoice = humanChoice.toLowerCase();
+        if (humanChoice === "rock"){
+            switch(computerChoice){
                 case "rock":
                     console.log("Draw! Both chose rock.");
                     break;
@@ -37,8 +37,8 @@ function playGame() {
                     humanScore ++;
                     break;
             }
-        } else if (humanSelection === "paper"){
-            switch(computerSelection){
+        } else if (humanChoice === "paper"){
+            switch(computerChoice){
                 case "rock":
                     console.log("You win! Paper beats rock.");
                     humanScore ++;
@@ -52,7 +52,7 @@ function playGame() {
                     break;
             }
         } else {
-            switch(computerSelection){
+            switch(computerChoice){
                 case "rock":
                     console.log("You lose! Rock beats scissors.");
                     computerScore ++;
@@ -72,10 +72,10 @@ function playGame() {
     let humanScore = 0;
 
     for(let i = 1; i <= 5; i++) {
-        const computerChoice = getComputerChoice();
-        const humanChoice = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        const humanSelection = getHumanChoice();
 
-        playRound(computerChoice, humanChoice);
+        playRound(computerSelection, humanSelection);
 
         console.log(
             `Player: ${humanScore}\n` +
