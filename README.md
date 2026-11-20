@@ -6,6 +6,8 @@
 
 A console-based Rock, Paper, Scissors game built to practice the core fundamentals of JavaScript. Developed as part of **The Odin Project** curriculum.
 
+🔗 **[Live Demo / Preview](https://lucasrm26.github.io/odin-rock-paper-scissors/)**
+
 ## 💡 Key Learnings
 
 - Applying a problem-solving and logical approach before writing code.
